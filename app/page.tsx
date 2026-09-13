@@ -64,6 +64,7 @@ export default function Home() {
             <a className="btn" href="#carreras">
               Conocé las carreras →
             </a>
+
             <a className="btn ghost" href="#actividades">
               Ver actividades
             </a>
@@ -96,7 +97,9 @@ export default function Home() {
 
               <div>
                 <h3>{c[1]}</h3>
+
                 <p>{c[2]}</p>
+
                 <a href="#obser">Ver más →</a>
               </div>
             </article>
@@ -108,6 +111,7 @@ export default function Home() {
         <div className="heading">
           <div>
             <small>EL LUGAR</small>
+
             <h2>
               ¿Por qué estudiar
               <br />
@@ -125,7 +129,9 @@ export default function Home() {
           {features.map((f) => (
             <div key={f[1]}>
               <span>{f[0]}</span>
+
               <h3>{f[1]}</h3>
+
               <p>Conocé una parte de la experiencia universitaria.</p>
             </div>
           ))}
@@ -184,6 +190,7 @@ export default function Home() {
         <div className="heading">
           <div>
             <small>PRÓXIMAS ACTIVIDADES</small>
+
             <h2>¡Sumate!</h2>
           </div>
 
