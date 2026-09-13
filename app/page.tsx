@@ -24,10 +24,16 @@ export default function Home() {
     <>
       <header>
         <div className="logo">
-          <img
-            src="/logo-estudia-ciencia-obser.jpg"
-            alt="Estudiá Ciencia — Estudiá en el Obser"
-          />
+          <picture>
+            <source
+              media="(max-width: 700px)"
+              srcSet="/logo-mobile-estudia-ciencia%20(1).jpg"
+            />
+            <img
+              src="/logo-header-estudia-ciencia%20(1).jpg"
+              alt="Estudiá Ciencia — Estudiá en el Obser"
+            />
+          </picture>
         </div>
 
         <nav>
@@ -97,9 +103,7 @@ export default function Home() {
 
               <div>
                 <h3>{c[1]}</h3>
-
                 <p>{c[2]}</p>
-
                 <a href="#obser">Ver más →</a>
               </div>
             </article>
@@ -129,9 +133,7 @@ export default function Home() {
           {features.map((f) => (
             <div key={f[1]}>
               <span>{f[0]}</span>
-
               <h3>{f[1]}</h3>
-
               <p>Conocé una parte de la experiencia universitaria.</p>
             </div>
           ))}
@@ -190,7 +192,6 @@ export default function Home() {
         <div className="heading">
           <div>
             <small>PRÓXIMAS ACTIVIDADES</small>
-
             <h2>¡Sumate!</h2>
           </div>
 
@@ -233,8 +234,10 @@ export default function Home() {
 
       <footer>
         <div className="footerlogo">
-          📚 <b>Estudiá<br />ciencia</b>
-          <small>ESTUDIÁ EN EL OBSER</small>
+          <img
+            src="/logo-footer-estudia-ciencia%20(1).png"
+            alt="Estudiá Ciencia — Estudiá en el Obser"
+          />
         </div>
 
         <div>
